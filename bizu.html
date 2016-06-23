@@ -115,9 +115,10 @@ function color(d) {
   //                     collapsed                branch      leaf
   //                     blue                     mist        orange
   //return d._children ? "#3182bd" : d.children ? "#c6dbef" : "#fd8d3c";
-  g=100
-  b=100
-  health_color = "#" + ((1 << 24) + (d.health << 16) + (g << 8) + b).toString(16).slice(1);
+  r=d.health*254
+  g=((254-r)/2)
+  b=20
+  health_color = "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
   return d._children ? "#3182bd" : d.children ? "#c6dbef" : health_color;
 
 }
