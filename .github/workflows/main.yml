@@ -26,8 +26,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Stub out coverage
         run: echo Codecov has been removed from github actions for this repo
-        with:
-          token: blahblahblah
-          flags: unit
-          fail_ci_if_error: true
+        #with:
+        #  token: blahblahblah
+        #  flags: unit
+        #  fail_ci_if_error: true
 
